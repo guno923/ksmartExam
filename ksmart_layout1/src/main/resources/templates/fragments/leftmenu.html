@@ -2,6 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 	<div id="leftcolumn" th:fragment="leftmenuFragment">
 		left.html <br><br>
-		왼쪽 메뉴
+		<a th:href="@{/boardList}">게시판</a> <br><br>
+		<a th:href="@{/addBoard}" th:unless="${session.SID eq null}">게시글등록</a>
 	</div>
 </html>

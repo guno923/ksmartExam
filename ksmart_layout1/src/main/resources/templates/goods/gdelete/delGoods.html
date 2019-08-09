@@ -7,6 +7,8 @@
 	<title>회원탈퇴</title>
 </th:block>
 <th:block layout:fragment="customContents">
+	<h5>상품 등록 취소</h5>
+	<hr>
 	<form action="/delGoods" method="post">
 		<input type="hidden" name="memberId" th:value="${session.SID}">
 		<table border="1">

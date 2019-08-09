@@ -7,6 +7,8 @@
 	<title>회원목록</title>
 </th:block>
 <th:block layout:fragment="customContents">
+	<h5>회원목록</h5>
+	<hr>
 	<!-- 검색 -->
 	<form action="/memberList" method="post">
 		<select name="sk">
@@ -16,7 +18,7 @@
 		<input type="text" name="sv">
 		<button type="submit">검색</button>
 	</form>
-	
+	<hr>
 	<table class="table table-Active table-hover" width="100%" border="1">
 		<thead class="thead-dark">
 			<tr>

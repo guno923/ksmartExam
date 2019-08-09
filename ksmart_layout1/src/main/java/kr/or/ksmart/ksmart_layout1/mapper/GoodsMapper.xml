@@ -126,7 +126,7 @@
 		WHERE g_code = #{goodsCode}
  	</select>
  	<update id="modifyGoods" parameterType="kr.or.ksmart.ksmart_layout1.vo.Goods">
- 		update tb_goods set
+ 		update tb_goods
  		<trim prefix="set" suffixOverrides=",">
  			<if test="goodsName neq null and goodsName neq ''.toString()">
  				g_name = #{goodsName},

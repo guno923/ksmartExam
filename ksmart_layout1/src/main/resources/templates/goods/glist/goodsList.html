@@ -7,6 +7,8 @@
 	<title>상품목록</title>
 </th:block>
 <th:block layout:fragment="customContents">
+	<h5>상품목록</h5>
+	<hr>
 	<!-- 검색 -->
 	<form action="/getGoodsSearch" method="post">
 		<select name="sk">
@@ -20,7 +22,7 @@
 		<button type="submit">검색</button>
 		</p>
 	</form>
-	
+	<hr>
 	<table width="100%" border="1">
 		<thead>
 			<tr>
